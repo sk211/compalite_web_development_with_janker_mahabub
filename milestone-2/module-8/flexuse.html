@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>flexbox useable</title>
+    <style>
+        .login-form{
+            display: flex;
+            flex-direction: column;
+        }
+        .login-container{
+            display: flex;
+            justify-content: center;
+        }
+        .login-form input, button{
+            font-size: 1.3em;
+            margin-top:15px;
+            padding-left: 10px;
+        }
+        a{
+            text-decoration: none;
+            color:gray;
+            font-size: 1.5em;
+        }
+        header ul{
+            list-style: none;
+            display: flex;
+            gap:20px;
+        }
+        header nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav-2nd li{
+            list-style: none;
+            
+        }
+        .nav-2nd {
+            display: flex;
+            gap:5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">order</a></li>
+                    <li><a href="#">About us</a></li>
+                   
+                </ul>
+            </div>
+            <div class="nav-2nd">
+                <li><a href="#"><i class="fas fa-user"></i></a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i></a></li>
+            </div>
+          
+        </nav>
+    </header>
+    <section class="login-container">
+        <form action="#" class="login-form">
+            <h2>Login</h2>
+            <input type="email" name="emale" placeholder="Enter you Email">
+            <input type="password" placeholder="Enter you pasword" name="password">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
