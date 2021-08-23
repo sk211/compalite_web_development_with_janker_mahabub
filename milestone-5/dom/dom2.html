@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>javascrip dom</title>
+    </head>
+
+    <body>
+        <h2> Hello javascript </h2>
+        <h2> Hello php </h2>
+        <h2> Hello Reactjs </h2>
+        <h1 id="title"> Hello javascript </h1>
+        <p class="blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, omnis?</p>
+        <p class="blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis recusandae quod sint nostrum quia
+            ab mollitia
+            beatae architecto, quam vitae.</p>
+        <p class="blog">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus recusandae velit adipisci
+            accusamus non
+            consequuntur aspernatur aliquam ipsum tempora fugiat nulla, necessitatibus impedit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis veritatis minima blanditiis
+            nostrum fugiat vitae exercitationem ab at maxime! Beatae deleniti laboriosam atque praesentium consequuntur
+            quam cupiditate voluptates suscipit.</p>
+    </body>
+    <script>
+        const blogTitles = document.getElementsByTagName('h2');
+        for (const h2 of blogTitles) {
+            console.log(h2.innerText)
+        }
+        const blogDesc = document.getElementsByTagName("p");
+        for (const p of blogDesc) {
+            console.log(p);
+        }
+        const tiTle = document.getElementById("title");
+        tiTle.innerText = "Hello sujan";
+        tiTle.style.background = "salmon"
+        tiTle.style.color = "#fff"
+
+        const blogs = document.getElementsByClassName("blog")
+        for (const blog of blogs) {
+            blog.style.border = '2px solid orange';
+            blog.style.margin = '10px';
+            blog.style.borderRadius = '5px';
+            blog.style.padding = '10px'
+        }
+
+    </script>
+
+</html>

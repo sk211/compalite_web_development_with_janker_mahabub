@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>javascript dom</title>
+    </head>
+
+    <body>
+        <button onclick="alert('How can I help you')">click me</button>
+        <button id="button1">click me</button>
+
+        <h2 id="change">change html element</h2>
+        <button id="button2">change the element</button>
+
+        <script>
+            document.getElementById("button2").onclick = function () {
+                document.getElementById("change").innerHTML = "Helle facebook";
+                document.getElementById("change").style.background = "green";
+                document.getElementById("change").style.color = "white";
+            }
+        </script>
+    </body>
+
+</html>

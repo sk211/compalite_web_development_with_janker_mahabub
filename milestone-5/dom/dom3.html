@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NOdeList htmlcollection setAttribute parentNode clidnode</title>
+    </head>
+
+    <body>
+        <h1>Hello javascrip node</h1>
+        <p class="blog" id="blogs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quod, inventore quidem
+            commodi
+            recusandae labore, corrupti officiis quas numquam dolores quos rerum.</p>
+        <p class="blog" id="blogs">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ducimus.</p>
+        <p class="blog" id="blogs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, perspiciatis.</p>
+
+        <section id="blogs-1">
+            <header>
+                <h2>Blogs List</h2>
+                <ul id="blog-list">
+                    <li>list 1</li>
+                    <li>list 2</li>
+                    <li>list 3</li>
+                </ul>
+            </header>
+        </section>
+    </body>
+    <script>
+        // console.log(document.querySelectorAll(".blog"));
+        // blog.setAttribute("title", "i am tultip");
+
+        // create element 
+
+        const li = document.createElement("li");
+        li.innerText = "Blog 5";
+        const li1 = document.createElement("li");
+        li1.innerText = "Blog 6";
+
+        // whre to 
+        const ul = document.getElementById('blog-list');
+        ul.appendChild(li)
+        ul.appendChild(li1);
+
+        // add artical 
+        const artical = document.createElement('artical');
+        const h3 = document.createElement('h3');
+        h3.innerText = "my block 3";
+        const p = document.createElement('p');
+        p.innerText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quod, inventore quide"
+        artical.appendChild(h3);
+        artical.appendChild(p);
+
+        // parent of artical 
+        const blogSecton = document.getElementById("blogs-1");
+        blogSecton.appendChild(artical);
+    </script>
+
+</html>

@@ -1,0 +1,39 @@
+body {
+  background: radial-gradient(circle, #fff, #ccc);
+}
+#container {
+  height: 400px;
+  width: 500px;
+  background-color: #9dd2ea;
+}
+.score {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #7d717147;
+}
+
+#correct {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #7d717147;
+  /* display: none; */
+}
+
+#try-again {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #7d717147;
+  /* display: none; */
+}

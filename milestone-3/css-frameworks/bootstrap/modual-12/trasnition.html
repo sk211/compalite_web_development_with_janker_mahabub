@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transition</title>
+    <style>
+.div {
+  width: 100px;
+  height: 100px;
+  background: red;
+ transition: width 2s, height 4s ease-in-out;
+}
+.div:hover{
+    width:500px;
+    height: 500px;
+     transition: width 2s, height 4s ease-in-out;
+}
+.transition{
+    width:200px;
+    height: 200px;
+    background:aqua;
+    transition: ease 5s;
+    /* transition-timing-function: linear; */
+
+}
+.transition:hover{
+    width:400px;
+    height: 400px;
+    background:greenyellow;
+    transition-timing-function: linear;
+
+}
+    </style>
+</head>
+<body>
+    <h2>hello transtion</h2>
+    <div class="div">hello div</div>
+    <div class="transition">
+        hello
+    </div>
+</body>
+</html>
