@@ -16,7 +16,14 @@ function loadPost() {
         .then(res => res.json())
         .then(data => console.log(data))
 }
-loadPost()
+// loadPost()
 function displayData(data) {
-    console.log(data);
+    const users = document.getElementById("user_list")
+    for (const user of data) {
+        const li = document.createElement("li")
+        li.innerText = `User name is ${user.name} user Email ${user.email}`
+        li.classList = "list-group-item"
+        // console.log(user.name);
+        users.appendChild(li)
+    }
 }

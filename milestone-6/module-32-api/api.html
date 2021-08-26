@@ -5,14 +5,29 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- bootstrap cdn link  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <title>Application Programming Interpase</title>
     </head>
 
     <body>
-        <h2>api</h2>
-        <button onclick="loadData()">Load Data</button>
-        <button onclick="loadUserData()">Load User Data</button>
-        <button onclick="loadPost()">Load Post Data</button>
+        <div class="container">
+
+
+            <h2>api</h2>
+            <div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush" id="user_list">
+
+                </ul>
+            </div>
+            <button class="btn btn-primary" onclick="loadData()">Load Data</button>
+            <button class="btn btn-primary" onclick="loadUserData()">Load User Data</button>
+            <button class="btn btn-primary" onclick="loadPost()">Load Post Data</button>
+        </div>
+        <!-- <ul id="user_list">
+
+        </ul> -->
+
         <script src="api.js"></script>
     </body>
 
