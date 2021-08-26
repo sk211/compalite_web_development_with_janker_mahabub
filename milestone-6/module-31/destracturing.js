@@ -8,11 +8,11 @@ const fish = {
 }
 // const phone = fish.phone
 // const price = fish.price
-
+const product = { name: 'Laptop', model: 'Yoga 3', price: 49000, dusk: '512SSD' }
 const { phone, price, id, dress } = fish
 
 // console.log(fish.phone);
-// console.log(fish.price);
+console.log(product.price);
 // console.log(fish.id);
 // console.log(fish.dress);
 
@@ -43,4 +43,4 @@ const work = company.web.work
 const { work, famerowk } = company.web
 const { food } = company.ceo
 
-console.log(work, famerowk, food);
+// console.log(work, famerowk, food);
