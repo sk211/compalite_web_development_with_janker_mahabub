@@ -12,7 +12,7 @@ const product = { name: 'Laptop', model: 'Yoga 3', price: 49000, dusk: '512SSD' 
 const { phone, price, id, dress } = fish
 
 // console.log(fish.phone);
-console.log(product.price);
+// console.log(product.price);
 // console.log(fish.id);
 // console.log(fish.dress);
 
@@ -35,7 +35,7 @@ const company = {
     }
 }
 // old method
-const work = company.web.work
+// const work = company.web.work
 // const framework = company.web.famerowk
 // console.log(work);
 // console.log(framework);
@@ -44,3 +44,7 @@ const { work, famerowk } = company.web
 const { food } = company.ceo
 
 // console.log(work, famerowk, food);
+const premikas = { name: 'keka ferdousi', cars: { brand: 'toyota' } }
+
+const { brand } = premikas.cars
+console.log(brand);

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Description" content="Enter your description here" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+        <title>MealDB</title>
+    </head>
+
+    <body>
+        <h3 class="text-center mt-3">Hello World</h3>
+        <div class="container">
+            <div class="w-50 mx-auto">
+                <div class="input-group mb-3">
+                    <input id='search-field' type="text" class="form-control" placeholder="Search the food name"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button onclick="searchFood()" class="btn btn-info" type="button" id="button-addon2">Search</button>
+                </div>
+            </div>
+        </div>
+        <!-- error message  -->
+        <p id="error-message" class="text-danger">Some Problem try somtning new</p>
+        <!-- result card      -->
+        <div class="container">
+            <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+
+            </div>
+        </div>
+
+        <!-- meal detelse with modal  -->
+
+        <!-- Button trigger modal -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row" id="modal_contain">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+            <script src="maile.js"></script>
+    </body>
+
+</html>
