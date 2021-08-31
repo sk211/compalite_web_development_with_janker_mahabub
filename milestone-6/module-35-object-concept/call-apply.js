@@ -4,8 +4,8 @@ const kibria = {
     major: 'mathematics',
     isRich: false,
     money: 5000,
-    treatDey: function (expense) {
-        this.money = this.money - expense
+    treatDey: function (expense, boksis) {
+        this.money = this.money - expense - boksis
         console.log(this);
         return this.money
     }
@@ -21,12 +21,14 @@ const heroAlam = {
     name: "hero Alam"
 }
 
-// kibria.treatDey(100)
+// call 
+// kibria.treatDey.call(heroAlam, 500, 100)
+// kibria.treatDey.call(heroAlam, 300, 50)
 
-const heroTreatDay = kibria.treatDey.bind(heroBalam)
-heroTreatDay(500)
-heroTreatDay(400)
-// kibria.treatDey(400)
-const heroAlamTretday = kibria.treatDey.bind(heroAlam)
-heroAlamTretday(2000)
-// console.log(heroAlamTretday);
+
+// apply 
+kibria.treatDey.apply(heroAlam, [500, 100])
+
+
+
+
