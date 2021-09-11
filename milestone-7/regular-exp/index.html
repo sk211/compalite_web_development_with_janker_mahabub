@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Regular expration</title>
+        <style>
+            input[type="text"] {
+                /* outline-color: red; */
+                /* border: 2px solid red; */
+                border-radius: 5px;
+                padding: 2px 5px
+            }
+
+            #inputSpan {
+                color: red;
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Regular expration</h2>
+        <input type="text" name="" id="inputFiled">
+
+        <input type="button" value="Submit" id="SubmitBtn">
+        <span id="inputSpan">input friled is not empty</span>
+
+        <script>
+            // select the id 
+            const submitBtn = document.getElementById("SubmitBtn");
+            const inputfiled = document.getElementById("inputFiled");
+            const inputValue = inputfiled.value
+            console.log(inputValue);
+            const spanTag = document.getElementById("inputSpan")
+            submitBtn.addEventListener("click", function () {
+                if (inputValue == false) {
+                    spanTag.style.display = "block"
+                    inputfiled.style.border = "2px solid red"
+                    return
+                } else if (inputValue == true) {
+                    console.log(inputValue);
+                }
+            })
+        </script>
+    </body>
+
+</html>

@@ -1,5 +1,11 @@
 // alert("hello bangladesh")
 
+alert("Bangledes is a land of river ")
+const newfun =() =>{
+   alert("i am new fuction")
+}
+
+
 const comming = () => {
     alert("Ma is comming ")
 }
